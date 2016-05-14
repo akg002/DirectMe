@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "211428543838",
+    "project_id": "directme-1311"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211428543838:android:2b80df056133159a",
+        "android_client_info": {
+          "package_name": "in.silive.directme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211428543838-rmq0qpqjbg5p6lgd6crp67ftn1d9e5t9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.silive.DirectMe",
+            "certificate_hash": "06DB4EBC5D888FBF7A580F43747680E479A58B56"
+          }
+        },
+        {
+          "client_id": "211428543838-pli7k9idchrg9aa4nprq50j9kjrovm65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr3Y783VT9t0Im1nBCZZMvFcrSacbH3fc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

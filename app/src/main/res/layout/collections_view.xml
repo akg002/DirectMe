@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#44ffffff"
+    android:padding="3dp">
+    
+        <ImageView
+            android:layout_width="@dimen/collections_view_image_width"
+            android:layout_height="@dimen/collections_view_image_height"
+            android:src="@drawable/coins"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_gravity="center"
+            android:textColor="@color/collections_text_color"
+            android:layout_row="0"
+            android:layout_column="1"/>
+        <ImageView
+            android:layout_width="@dimen/collections_view_image_width"
+            android:layout_height="@dimen/collections_view_image_height"
+            android:src="@drawable/banana"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_gravity="center"
+            android:textColor="@color/collections_text_color"
+            android:layout_row="0"
+            android:layout_column="3"/>
+    <ImageView
+        android:layout_width="@dimen/collections_view_image_width"
+        android:layout_height="@dimen/collections_view_image_height"
+        android:src="@drawable/coconut"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_gravity="center"
+        android:textColor="@color/collections_text_color"
+       />
+    <ImageView
+        android:layout_width="@dimen/collections_view_image_width"
+        android:layout_height="@dimen/collections_view_image_height"
+        android:padding="5dp"
+        android:src="@drawable/wood"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_gravity="center"
+        android:textColor="@color/collections_text_color"
+        />
+
+
+</LinearLayout>
+
