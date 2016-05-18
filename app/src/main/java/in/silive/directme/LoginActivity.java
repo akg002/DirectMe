@@ -66,7 +66,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         Log.d(TAG, "handleSignInResult:" + result.isSuccess());
         if (result.isSuccess()) {
             GoogleSignInAccount acct = result.getSignInAccount();
-            Toast.makeText(this,"Sign in success"+acct.getDisplayName(),Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"Sign in success"+acct.getDisplayName(),Toast.LENGTH_LONG).show();
+            loggedInSuccessfully(acct.getDisplayName(),acct.getEmail());
         } else {
             Toast.makeText(this,"Sign in failed",Toast.LENGTH_LONG).show();
         }
@@ -91,8 +92,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                     JSONObject object,
                                     GraphResponse response) {
                                 try {
-                                    String name = object.getString("name");
-                                    Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
+                                    loggedInSuccessfully(object.getString("name"),object.getString("email"));
                                 }catch (Exception e){
                                     e.printStackTrace();
                                 }
@@ -114,6 +114,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
             }
         });
+    }
+
+    //Method called when login is successful
+    void loggedInSuccessfully(String name,String email){
+
     }
 
 
