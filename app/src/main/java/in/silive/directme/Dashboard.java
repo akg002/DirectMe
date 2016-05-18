@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import in.silive.directme.Activities.Map;
+
 public class Dashboard extends AppCompatActivity {
 
     @Override

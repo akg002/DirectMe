@@ -1,7 +1,9 @@
-package in.silive.directme;
+package in.silive.directme.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import in.silive.directme.R;
 
 public class Map extends AppCompatActivity {
 
