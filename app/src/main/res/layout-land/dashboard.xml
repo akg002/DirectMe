@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#01032f"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dashboard_first_row_linear_layout_margin"
+            android:layout_weight="2.5">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dashboard_first_table_layout_linear_layout_margin"
+                        android:background="#01032f"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dashboard_score_image_width"
+                                android:layout_height="@dimen/dashboard_score_image_height"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/bamboo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/coconut" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/timber" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/banana" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                        android:background="#01032f">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="DirectMe"
+                            android:textColor="#ffffff"
+                            android:textSize="50sp" />
+
+                    </LinearLayout>
+
+
+                    <!--</TableRow>
+
+                    <TableRow>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                        android:background="#01032f"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="Level 3"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dashboard_first_table_sec_layout_linear_layout_margin"
+                        android:background="#01032f"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="Rules"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:background="#2196f3">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dashboard_second_row_height"
+                    android:layout_margin="3dp"
+                    android:background="#01032f">
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#757575"
+                            android:gravity="center"
+                            android:text="le"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/upgrade"
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="UPGRADE"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/ship2" />
+
+                            <Button
+                                android:id="@+id/park"
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="PARK"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="UPGRADE"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/ship2" />
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="PARK"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="UPGRADE"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/ship2" />
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="PARK"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="UPGRADE"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:src="@drawable/ship2" />
+
+                            <Button
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:backgroundTint="#757575"
+                                android:gravity="center"
+                                android:text="PARK"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:backgroundTint="#757575"
+                            android:gravity="center"
+                            android:text="->"
+                            android:textColor="#ffffff" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="2.7">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="#01032f"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Record"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="#01032f"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Score"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="#01032f"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Logout"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="#01032f"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Exit"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
