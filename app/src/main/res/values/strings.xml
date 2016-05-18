@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">DirectMe</string>
+    <string name="action_settings">Settings</string>
 
-    <string name="facebook_app_id">591977084303929</string>
-    <string name="fb_login_protocol_scheme">fb591977084303929</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

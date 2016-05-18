@@ -1,4 +1,4 @@
-package in.silive.directme;
+package in.silive.directme.Activities;
 
 import android.content.Intent;
 import android.support.v4.util.ArrayMap;
@@ -29,6 +29,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import org.json.JSONObject;
 
 import java.util.Arrays;
+
+import in.silive.directme.R;
 
 public class LoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener ,View.OnClickListener{
     LoginButton fbLoginBtn;
