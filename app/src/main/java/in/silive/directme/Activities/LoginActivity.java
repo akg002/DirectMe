@@ -1,11 +1,14 @@
 package in.silive.directme.Activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.design.widget.Snackbar;
 import android.support.v4.util.ArrayMap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -39,12 +42,14 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     SignInButton googleSignInBtn ;
     final int RC_SIGN_IN = 9231;
     static final String TAG = "DirectMe";
+    RelativeLayout loginFrame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(getApplication());
         setContentView(R.layout.activity_login);
+        loginFrame = (RelativeLayout)findViewById(R.id.login_frame);
        setUpFbLogin();
         setUpGoogleLogin();
     }
@@ -96,6 +101,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                 try {
                                     loggedInSuccessfully(object.getString("name"),object.getString("email"));
                                 }catch (Exception e){
+                                   loginFailed();
                                     e.printStackTrace();
                                 }
                             }
@@ -113,14 +119,27 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
             @Override
             public void onError(FacebookException error) {
-
+loginFailed();
             }
         });
     }
 
     //Method called when login is successful
     void loggedInSuccessfully(String name,String email){
+        Toast.makeText(LoginActivity.this, "Logged in as "+name, Toast.LENGTH_LONG).show();
+        SharedPreferences sp = getSharedPreferences("DirectMe",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean("login",true);
+        editor.putString("fullname",name);
+        editor.putString("email",email);
+        editor.apply();
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
+    public void loginFailed(){
+        Toast.makeText(this, "Failed to log in.", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -136,7 +155,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
-
+loginFailed();
     }
 
     @Override

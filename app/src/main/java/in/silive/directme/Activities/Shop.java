@@ -13,10 +13,10 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import silive.in.sampledirectme.Fragments.Ship1;
-import silive.in.sampledirectme.Fragments.Ship2;
-import silive.in.sampledirectme.Fragments.Ship3;
-import silive.in.sampledirectme.R;
+import in.silive.directme.Fragments.Ship1;
+import in.silive.directme.Fragments.Ship2;
+import in.silive.directme.Fragments.Ship3;
+import in.silive.directme.R;
 
 /**
  * Created by akriti on 16/5/16.

@@ -6,5 +6,10 @@
     <dimen name="dashboard_score_image_height">10dp</dimen>
     <dimen name="dashboard_score_image_width">10dp</dimen>
 
+
+    <!-- Collections View dimensions -->
+    <dimen name="collections_view_image_width">35dp</dimen>
+       <dimen name="collections_view_image_height">35dp</dimen>
+
     <dimen name="dashboard_second_row_height">100dp</dimen>
 </resources>
