@@ -3,13 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="dashboard_score_image_height">10dp</dimen>
-    <dimen name="dashboard_score_image_width">10dp</dimen>
-
-
-    <!-- Collections View dimensions -->
-    <dimen name="collections_view_image_width">35dp</dimen>
-       <dimen name="collections_view_image_height">35dp</dimen>
 
     <dimen name="dashboard_second_row_height">100dp</dimen>
+    <dimen name="dashboard_first_row_linear_layout_margin">2dp</dimen>
+    <dimen name="dashboard_first_table_layout_linear_layout_margin">1dp</dimen>
+    <dimen name="dashboard_first_table_sec_layout_linear_layout_margin">1dp</dimen>
 </resources>
