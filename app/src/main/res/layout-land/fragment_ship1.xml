@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#01032f"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
 
 
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:layout_weight="2">
+        android:layout_weight="1">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -42,25 +42,26 @@
 
         </RelativeLayout>
 
-
     </LinearLayout>
 
+    <!-- Right Pane -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <!-- Ship Scavenging Rates -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2.5">
+        android:layout_height="wrap_content"
+        >
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TableRow>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -114,16 +115,9 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
-            <!--</TableRow>
+              </TableRow>
 
-            <TableRow>-->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:orientation="horizontal">
+                <TableRow>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -177,7 +171,6 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
             </TableRow>
         </TableLayout>
 
@@ -185,9 +178,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_weight="2"
+        android:layout_height="wrap_content"
+
         android:background="#01032f"
         android:orientation="vertical">
 
@@ -316,9 +308,11 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Goto Inventory"
+            android:layout_weight="0"
             android:id="@+id/goto_inventory"/>
 
     </LinearLayout>
+</LinearLayout>
 
 
 </LinearLayout>

@@ -41,7 +41,9 @@
             android:theme="@style/FullscreenTheme"/>
         <activity
             android:name=".Activities.Map"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape" /><activity
+        android:name=".Activities.Inventory"
+        android:screenOrientation="landscape" />
         <activity android:name=".Activities.LoginActivity"
             android:screenOrientation="landscape">
 
